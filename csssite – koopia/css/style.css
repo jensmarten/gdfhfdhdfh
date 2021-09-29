@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: azure;
+    overflow: hidden;
+}
+
+.container{
+    border:2px solid white;
+    width: 50%;
+    margin: 0 auto;
+}
+.circle1{
+    display: block;
+    background: transparent;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    animation-name: circle1;
+    animation-duration: 5s;
+}
+@keyframes circle1{
+    0%{background:transparent}
+    20%{background: greenyellow;}
+    40%{background: yellow;}
+    100%{background: yellow;}
+
+}
+.circle2{
+    display: block;
+    background: green;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    animation-name: circle2;
+    animation-duration: 2s;
+    
+}
+@keyframes circle2 {
+    100%{transform: rotateY(180deg);}
+
+}
+.circle3{
+    display: block;
+    background: red;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    animation-name:circle3;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes circle3 {
+    0%{top: -200px}
+    100%{top: 0px}
+}
