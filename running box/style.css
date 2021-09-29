@@ -1,0 +1,65 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(7,63,126);
+}
+
+.container{
+    /*height:804px;
+    width: 804px;
+    margin:2rem auto;*/
+    position: relative;
+}
+.box{
+    /*border:1px solid wheat;*/
+    border-radius: 5%;
+    height:200px;
+    width: 200px;
+    position: absolute;
+    animation-name: runningBox;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes runningBox{
+    0%{left:0;top:0;}
+    25%{left:200px;top:0;}
+    50%{left:400px;top:0}
+    75%{left:250px;top:0;}
+    100%{left:0;top:0;}
+
+}
+.mountain{
+    display:block;
+    scale:110%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cloud1{
+    position: absolute;
+    scale:40%;
+    animation-name: runningBox;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+.cloud2{
+    position: absolute;
+    scale:40%;
+    animation-name: cloud2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes cloud2{
+    0%{left:1400px;top:150px;}
+    15%{left:1300px;top:240px;}
+    25%{left:1200px;top:172px;}
+    50%{left:1100px;top:50px;}
+    75%{left:1200px;top:210px;}
+    85%{left:1312px;top:112px;}
+    100%{left:1400px;top:150px;}
+
+}
